@@ -36,6 +36,7 @@ dependencies:
   flukit_icons:
     path: ../flukit_icons/
   google_fonts: ^3.0.1
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:

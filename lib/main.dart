@@ -1,4 +1,5 @@
 import 'package:flukit/flukit.dart';
+import 'package:flukit_gallery/configs/routes.dart';
 import 'package:flutter/material.dart';
 
 import 'configs/settings.dart';
@@ -11,8 +12,11 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => FluMaterialApp(
-      controller: FluAppController(
-          appInformations: FluAppInformations(name: 'Flukit gallery'),
-          settings: AppSettings(),
-          themeBuilder: appThemeBuilders[AppThemes.blue]));
+        controller: FluAppController(
+            appInformations: FluAppInformations(name: 'Flukit gallery'),
+            settings: AppSettings(),
+            themeBuilder: appThemeBuilders[AppThemes.blue]),
+        getPages: appPages,
+        initialRoute: AppRoutes.splash.name,
+      );
 }
