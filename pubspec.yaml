@@ -30,9 +30,11 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flukit:
-    path: ../flukit/
+    git:
+      url: https://github.com/charles9904/flukit.git
   flukit_icons:
-    path: ../flukit_icons/
+    git:
+      url: https://github.com/charles9904/flukit_icons.git
   flutter:
     sdk: flutter
   get: ^4.6.5
